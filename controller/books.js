@@ -1,3 +1,9 @@
+const entity = require('../entity/books')
 
-export function getBooks(req, res){
+function getBooks(req, res){
+	res.json(entity.getBooks())
+}
+
+module.exports = {
+	getBooks
 }

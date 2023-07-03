@@ -7,7 +7,7 @@ function getDB() {
 }
 
 function seedBooksData() {
-	db.serialize(()=> {
+	db.serialize(function() {
 		db.run(`CREATE TABLE books (
 			title VARCHAR(50),
 			description TEXT,
